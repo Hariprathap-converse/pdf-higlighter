@@ -3,14 +3,16 @@
 /* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-const showHighlight = (values: any, isHover?: boolean) => {
+const showHighlight = (values: any, isHover?: boolean, initial?: boolean) => {
   let selected: Selected = {
     coords: values?.coords,
     pageNumber: Number(values?.pageNumber),
     selectedCoords: [],
   };
 
-  clearOldRectangles();
+  if (initial == false) {
+    clearOldRectangles();
+  }
   drawRectangle(JSON.parse(JSON.stringify(selected)), isHover);
 };
 
