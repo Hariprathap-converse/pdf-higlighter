@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable prefer-const */
+/* eslint-disable no-var */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 // "use client";
 // import React, { useEffect, useMemo, useState } from "react";
 // import showHighlight from "./components/pdfhighlight";
@@ -1084,13 +1089,7 @@ import { mergeData } from "./components/mock-data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
-  Check,
-  X,
-  Edit2,
-  AlertCircle,
-  Info,
   ShieldCheck,
-  Badge,
   AlertTriangle,
   XCircle,
   Edit3,

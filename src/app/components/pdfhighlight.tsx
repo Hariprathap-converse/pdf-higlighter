@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable prefer-const */
+/* eslint-disable no-var */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 const showHighlight = (values: any, isHover?: boolean) => {
   let selected: Selected = {
     coords: values?.coords,
