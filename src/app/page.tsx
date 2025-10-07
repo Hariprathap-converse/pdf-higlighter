@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable prefer-const */
-/* eslint-disable no-var */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -120,10 +116,11 @@ export default function Page() {
     return () => {
       if (pdfURL) URL.revokeObjectURL(pdfURL);
     };
+    
   }, [pdfURL]);
 
   const showValue = (field: Field, isHover: boolean) => {
-    showHighlight(field, isHover,false);
+    showHighlight(field, isHover, false);
   };
 
   const handleValueChange = (index: number, value: string) => {
@@ -255,7 +252,7 @@ export default function Page() {
     field: Field,
     isHover: boolean,
     retries = 20,
-    delay = 200
+    delay = 500
   ) => {
     for (let i = 0; i < retries; i++) {
       try {
