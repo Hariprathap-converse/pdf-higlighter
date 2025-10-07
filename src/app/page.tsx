@@ -1387,7 +1387,7 @@ export default function Page() {
             Highlights & Edit
           </h2>
 
-          <div className="overflow-auto max-h-[800px] p-4">
+          <div className="overflow-auto max-h-[700px] p-4">
             <Table>
               <TableHeader>
                 <TableRow className="h-[60px] bg-gray-100">
