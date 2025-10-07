@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "vercel-build": "npm install --legacy-peer-deps && next build",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint"
@@ -23,16 +22,11 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dommatrix": "^0.1.1",
-    "fuse.js": "^7.1.0",
     "lucide-react": "^0.544.0",
     "next": "^15.5.4",
-    "pdf-lib": "^1.17.1",
-    "pdfjs-dist": "^3.11.174",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-frame-component": "^5.2.7",
-    "react-json-view": "^1.21.3",
-    "react-pdf": "^10.1.0",
     "tailwind-merge": "^3.3.1",
     "tailwind-variants": "^3.1.1"
   },
