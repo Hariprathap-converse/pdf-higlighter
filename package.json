@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "next": "^14.2.3",
     "dev": "next dev --turbopack",
+    "vercel-build": "npm install --legacy-peer-deps && next build",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint"
