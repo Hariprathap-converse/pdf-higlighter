@@ -3,8 +3,6 @@
 /* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
-import { useRouter } from "next/navigation"; // for Next.js 13+ App Router
-
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   Table,
@@ -16,7 +14,7 @@ import {
 } from "@/components/ui/table";
 
 import showHighlight from "./components/pdfhighlight";
-import { mergeData } from "./components/mock-data";
+import { SinglePagemergeData } from "./components/mock-data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -89,13 +87,11 @@ export const flattenHighlights = (data: any): Highlight[] => {
 };
 
 export default function Page() {
-  const router = useRouter();
-
   const [pdfBlob, setPdfBlob] = useState<Blob | null>(null);
   const [editableHighlights, setEditableHighlights] = useState<Highlight[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const highlights = useMemo(() => flattenHighlights(mergeData), []);
+  const highlights = useMemo(() => flattenHighlights(SinglePagemergeData), []);
   const pdfIframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
@@ -198,7 +194,7 @@ export default function Page() {
     }));
 
     // Items payload: only include differences from main
-    const itemsPayload = mergeData.Items?.map((_, itemIndex) => {
+    const itemsPayload = SinglePagemergeData.Items?.map((_, itemIndex) => {
       const itemFields = itemHighlightsMap[itemIndex] || [];
 
       // Convert each field to an object
@@ -497,7 +493,7 @@ export default function Page() {
 
                 {/* Items */}
                 {!loading &&
-                  mergeData.Items?.map((_, itemIndex) => (
+                  SinglePagemergeData.Items?.map((_, itemIndex) => (
                     <React.Fragment key={itemIndex}>
                       {/* Item header row */}
                       <TableRow className="bg-gray-100 ">
@@ -687,7 +683,7 @@ export default function Page() {
 
           <Button
             onClick={handleSubmit}
-            className="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white rounded"
+            className="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white"
           >
             Submit All
           </Button>

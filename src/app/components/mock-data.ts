@@ -879,3 +879,286 @@ export const mergeData = {
     },
   ],
 };
+
+
+export const SinglePagemergeData = {
+  InvoiceId: {
+    value: "CCU1-4632921",
+    coords: {
+      xMin: 0.7976753115653992,
+      xMax: 0.9250699281692505,
+      yMin: 0.3924764394760132,
+      yMax: 0.40317535400390625,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  InvoiceDetails: {
+    value: "WB-CCU1-1034-2122",
+    coords: {
+      xMin: 0.7428610324859619,
+      xMax: 0.9275079965591431,
+      yMin: 0.41028815507888794,
+      yMax: 0.4209343492984772,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  InvoiceDate: {
+    value: "04.02.2022",
+    coords: {
+      xMin: 0.8331258893013,
+      xMax: 0.9278013110160828,
+      yMin: 0.42817461490631104,
+      yMax: 0.43843984603881836,
+    },
+    confidence: 0.95,
+    pageNumber: 1,
+  },
+  OrderNumber: {
+    value: "402-5005041-4753952",
+    coords: {
+      xMin: 0.2114754319190979,
+      xMax: 0.4026195704936981,
+      yMin: 0.39270320534706116,
+      yMax: 0.40324562788009644,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  OrderDate: {
+    value: "04.02.2022",
+    coords: {
+      xMin: 0.8331258893013,
+      xMax: 0.9278013110160828,
+      yMin: 0.42817461490631104,
+      yMax: 0.43843984603881836,
+    },
+    confidence: 0.95,
+    pageNumber: 1,
+  },
+  PanNumber: {
+    value: "AALCA0171E",
+    coords: {
+      xMin: 0.15332373976707458,
+      xMax: 0.26992496848106384,
+      yMin: 0.28112319111824036,
+      yMax: 0.29192155599594116,
+    },
+    confidence: 0.95,
+    pageNumber: 1,
+  },
+  GSTNumber: {
+    value: "19AALCA0171E1ZW",
+    coords: {
+      xMin: 0.26910388469696045,
+      xMax: 0.4457119107246399,
+      yMin: 0.2970959544181824,
+      yMax: 0.307718425989151,
+    },
+    confidence: 0.95,
+    pageNumber: 1,
+  },
+  SoldBy: {
+    value: "Appario",
+    coords: {
+      xMin: 0.07175516337156296,
+      xMax: 0.13674481213092804,
+      yMin: 0.13824962079524994,
+      yMax: 0.1514284908771515,
+    },
+    confidence: 0.95,
+    pageNumber: 1,
+  },
+  CustomerName: {
+    value: "SOUVIK",
+    coords: {
+      xMin: 0.7748875617980957,
+      xMax: 0.8462720513343811,
+      yMin: 0.13774703443050385,
+      yMax: 0.14887213706970215,
+    },
+    confidence: 0.97,
+    pageNumber: 1,
+  },
+  UTC: {
+    value: "19",
+    coords: {
+      xMin: 0.9084844589233398,
+      xMax: 0.9278416633605957,
+      yMin: 0.2009667009115219,
+      yMax: 0.21139360964298248,
+    },
+    confidence: 0.96,
+    pageNumber: 1,
+  },
+  ShippingAddress: {
+    value: "Madhyamgram",
+    coords: {
+      xMin: 0.582531750202179,
+      xMax: 0.7118474245071411,
+      yMin: 0.3093778192996979,
+      yMax: 0.3227783143520355,
+    },
+    confidence: 0.95,
+    pageNumber: 1,
+  },
+  ShippingUTC: {
+    value: "19",
+    coords: {
+      xMin: 0.902808427810669,
+      xMax: 0.9225210547447205,
+      yMin: 0.3409448266029358,
+      yMax: 0.3515506088733673,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  PlaceOfSupply: {
+    value: "WEST",
+    coords: {
+      xMin: 0.786051869392395,
+      xMax: 0.8407647013664246,
+      yMin: 0.35659533739089966,
+      yMax: 0.3671344816684723,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  PlaceOfDelivery: {
+    value: "BENGAL",
+    coords: {
+      xMin: 0.8519812226295471,
+      xMax: 0.9278797507286072,
+      yMin: 0.37252888083457947,
+      yMax: 0.38314545154571533,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  SubTotal: {
+    value: "₹11,425.42",
+    coords: {
+      xMin: 0.7579059600830078,
+      xMax: 0.8336596488952637,
+      yMin: 0.5521033406257629,
+      yMax: 0.5631995797157288,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  TaxRate: {
+    value: "9%",
+    coords: {
+      xMin: 0.6749393939971924,
+      xMax: 0.6969334483146667,
+      yMin: 0.5013430118560791,
+      yMax: 0.5138649940490723,
+    },
+    confidence: 0.98,
+    pageNumber: 1,
+  },
+  InvoiceTotal: {
+    value: "₹74,900.00",
+    coords: {
+      xMin: 0.8401179313659668,
+      xMax: 0.9235386848449707,
+      yMin: 0.5026443004608154,
+      yMax: 0.5139396786689758,
+    },
+    confidence: 0.99,
+    pageNumber: 1,
+  },
+  AmountDue: {
+    value: "₹74,900.00",
+    coords: {
+      xMin: 0.8380323052406311,
+      xMax: 0.9261986017227173,
+      yMin: 0.5522004961967468,
+      yMax: 0.563302218914032,
+    },
+    confidence: 0.99,
+    pageNumber: 1,
+  },
+  Items: [
+    {
+      Amount: {
+        value: "₹63,474.58",
+        coords: {
+          xMin: 0.5871889591217041,
+          xMax: 0.6615016460418701,
+          yMin: 0.5024150013923645,
+          yMax: 0.5138499140739441,
+        },
+        confidence: 0.97,
+        pageNumber: 1,
+      },
+      TaxRate: {
+        value: "9%",
+        coords: {
+          xMin: 0.6749393939971924,
+          xMax: 0.6969334483146667,
+          yMin: 0.5013430118560791,
+          yMax: 0.5138649940490723,
+        },
+        confidence: 0.97,
+        pageNumber: 1,
+      },
+      TaxType: {
+        value: "CGST",
+        coords: {
+          xMin: 0.7112862467765808,
+          xMax: 0.7532598972320557,
+          yMin: 0.5025510191917419,
+          yMax: 0.5113227963447571,
+        },
+        confidence: 0.97,
+        pageNumber: 1,
+      },
+      TaxAmount: {
+        value: "₹5,712.71",
+        coords: {
+          xMin: 0.7657257318496704,
+          xMax: 0.8254645466804504,
+          yMin: 0.5026872158050537,
+          yMax: 0.5138202905654907,
+        },
+        confidence: 0.97,
+        pageNumber: 1,
+      },
+      Description: {
+        value: "Apple",
+        coords: {
+          xMin: 0.10768010467290878,
+          xMax: 0.14633913338184357,
+          yMin: 0.4903014898300171,
+          yMax: 0.5008167028427124,
+        },
+        confidence: 0.28,
+        pageNumber: 1,
+      },
+      Quantity: {
+        value: "1",
+        coords: {
+          xMin: 0.5676699876785278,
+          xMax: 0.5734243392944336,
+          yMin: 0.5047290325164795,
+          yMax: 0.5121617913246155,
+        },
+        confidence: 0.8,
+        pageNumber: 1,
+      },
+      UnitPrice: {
+        value: "₹63,474.58",
+        coords: {
+          xMin: 0.4791051149368286,
+          xMax: 0.5529513359069824,
+          yMin: 0.5024834275245667,
+          yMax: 0.5138744115829468,
+        },
+        confidence: 0.97,
+        pageNumber: 1,
+      },
+    },
+  ],
+};
