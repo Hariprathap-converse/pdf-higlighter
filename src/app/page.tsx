@@ -3,6 +3,8 @@
 /* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
+import { useRouter } from "next/navigation"; // for Next.js 13+ App Router
+
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   Table,
@@ -31,6 +33,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import PageButtons from "./components/rout-buttons";
 
 type Coords = [number, number, number, number];
 
@@ -86,6 +89,8 @@ export const flattenHighlights = (data: any): Highlight[] => {
 };
 
 export default function Page() {
+  const router = useRouter();
+
   const [pdfBlob, setPdfBlob] = useState<Blob | null>(null);
   const [editableHighlights, setEditableHighlights] = useState<Highlight[]>([]);
   const [loading, setLoading] = useState(true);
@@ -120,7 +125,6 @@ export default function Page() {
     return () => {
       if (pdfURL) URL.revokeObjectURL(pdfURL);
     };
-    
   }, [pdfURL]);
 
   const showValue = (field: Field, isHover: boolean) => {
@@ -282,8 +286,9 @@ export default function Page() {
 
   return (
     <div className="h-screen w-full p-6 flex flex-col bg-gray-50">
-      <h1 className="text-2xl font-semibold mb-4 text-gray-800">
+      <h1 className="text-2xl font-semibold flex  gap-20 w-full justify-between px-5 mb-4 text-gray-800">
         PDF Highlights & Submit Example
+        <PageButtons />
       </h1>
 
       <div className="grid grid-cols-[45%_1fr] gap-5">
@@ -682,7 +687,7 @@ export default function Page() {
 
           <Button
             onClick={handleSubmit}
-            className="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white"
+            className="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white rounded"
           >
             Submit All
           </Button>

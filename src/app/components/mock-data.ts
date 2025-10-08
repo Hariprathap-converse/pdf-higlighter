@@ -608,7 +608,7 @@ export const mergeData = {
       yMax: 0.40317535400390625,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   InvoiceDetails: {
     value: "WB-CCU1-1034-2122",
@@ -619,7 +619,7 @@ export const mergeData = {
       yMax: 0.4209343492984772,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   InvoiceDate: {
     value: "04.02.2022",
@@ -630,7 +630,7 @@ export const mergeData = {
       yMax: 0.43843984603881836,
     },
     confidence: 0.95,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   OrderNumber: {
     value: "402-5005041-4753952",
@@ -641,7 +641,7 @@ export const mergeData = {
       yMax: 0.40324562788009644,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   OrderDate: {
     value: "04.02.2022",
@@ -652,7 +652,7 @@ export const mergeData = {
       yMax: 0.43843984603881836,
     },
     confidence: 0.95,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   PanNumber: {
     value: "AALCA0171E",
@@ -663,7 +663,7 @@ export const mergeData = {
       yMax: 0.29192155599594116,
     },
     confidence: 0.95,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   GSTNumber: {
     value: "19AALCA0171E1ZW",
@@ -674,7 +674,7 @@ export const mergeData = {
       yMax: 0.307718425989151,
     },
     confidence: 0.95,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   SoldBy: {
     value: "Appario",
@@ -685,7 +685,7 @@ export const mergeData = {
       yMax: 0.1514284908771515,
     },
     confidence: 0.95,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   CustomerName: {
     value: "SOUVIK",
@@ -696,7 +696,7 @@ export const mergeData = {
       yMax: 0.14887213706970215,
     },
     confidence: 0.97,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   UTC: {
     value: "19",
@@ -707,7 +707,7 @@ export const mergeData = {
       yMax: 0.21139360964298248,
     },
     confidence: 0.96,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   ShippingAddress: {
     value: "Madhyamgram",
@@ -718,7 +718,7 @@ export const mergeData = {
       yMax: 0.3227783143520355,
     },
     confidence: 0.95,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   ShippingUTC: {
     value: "19",
@@ -729,7 +729,7 @@ export const mergeData = {
       yMax: 0.3515506088733673,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   PlaceOfSupply: {
     value: "WEST",
@@ -740,7 +740,7 @@ export const mergeData = {
       yMax: 0.3671344816684723,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   PlaceOfDelivery: {
     value: "BENGAL",
@@ -751,7 +751,7 @@ export const mergeData = {
       yMax: 0.38314545154571533,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   SubTotal: {
     value: "₹11,425.42",
@@ -762,7 +762,7 @@ export const mergeData = {
       yMax: 0.5631995797157288,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   TaxRate: {
     value: "9%",
@@ -773,7 +773,7 @@ export const mergeData = {
       yMax: 0.5138649940490723,
     },
     confidence: 0.98,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   InvoiceTotal: {
     value: "₹74,900.00",
@@ -784,7 +784,7 @@ export const mergeData = {
       yMax: 0.5139396786689758,
     },
     confidence: 0.99,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   AmountDue: {
     value: "₹74,900.00",
@@ -795,7 +795,7 @@ export const mergeData = {
       yMax: 0.563302218914032,
     },
     confidence: 0.99,
-    pageNumber: 1,
+    pageNumber: 2,
   },
   Items: [
     {
@@ -808,7 +808,7 @@ export const mergeData = {
           yMax: 0.5138499140739441,
         },
         confidence: 0.97,
-        pageNumber: 1,
+        pageNumber: 2,
       },
       TaxRate: {
         value: "9%",
@@ -819,7 +819,7 @@ export const mergeData = {
           yMax: 0.5138649940490723,
         },
         confidence: 0.97,
-        pageNumber: 1,
+        pageNumber: 2,
       },
       TaxType: {
         value: "CGST",
@@ -830,7 +830,7 @@ export const mergeData = {
           yMax: 0.5113227963447571,
         },
         confidence: 0.97,
-        pageNumber: 1,
+        pageNumber: 2,
       },
       TaxAmount: {
         value: "₹5,712.71",
@@ -841,7 +841,7 @@ export const mergeData = {
           yMax: 0.5138202905654907,
         },
         confidence: 0.97,
-        pageNumber: 1,
+        pageNumber: 2,
       },
       Description: {
         value: "Apple",
@@ -852,7 +852,7 @@ export const mergeData = {
           yMax: 0.5008167028427124,
         },
         confidence: 0.28,
-        pageNumber: 1,
+        pageNumber: 2,
       },
       Quantity: {
         value: "1",
@@ -863,7 +863,7 @@ export const mergeData = {
           yMax: 0.5121617913246155,
         },
         confidence: 0.8,
-        pageNumber: 1,
+        pageNumber: 2,
       },
       UnitPrice: {
         value: "₹63,474.58",
@@ -874,7 +874,7 @@ export const mergeData = {
           yMax: 0.5138744115829468,
         },
         confidence: 0.97,
-        pageNumber: 1,
+        pageNumber: 2,
       },
     },
   ],
