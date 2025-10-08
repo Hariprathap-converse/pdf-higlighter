@@ -12,6 +12,7 @@ export default function PageButtons() {
     { path: "/both", label: "Both" },
     { path: "/diffrent", label: "Diffrent" },
     { path: "/size-different", label: "Size Different" },
+    { path: "/multiple", label: "Multiple Page" },
   ];
 
   return (
