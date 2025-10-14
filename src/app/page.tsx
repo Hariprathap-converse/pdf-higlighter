@@ -331,6 +331,13 @@ export default function Page() {
                 }, 1000);
                 applyAllHighlights();
               }}
+              onMouseEnter={() => {
+                // Reapply highlights when mouse enters iframe
+                const iframeWindow = pdfIframeRef.current?.contentWindow;
+                if (!iframeWindow) return;
+
+                editableHighlights.forEach((h) => waitForPDF(h.field, false));
+              }}
             />
           ) : (
             <div className="flex items-center justify-center h-full text-gray-500">
