@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import showHighlight from "./components/pdfhighlight";
+import showHighlight, { clearOldRectangles } from "./components/pdfhighlight";
 import { SinglePagemergeData } from "./components/mock-data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -334,8 +334,8 @@ export default function Page() {
               onMouseEnter={() => {
                 // Reapply highlights when mouse enters iframe
                 const iframeWindow = pdfIframeRef.current?.contentWindow;
+                clearOldRectangles()
                 if (!iframeWindow) return;
-
                 editableHighlights.forEach((h) => waitForPDF(h.field, false));
               }}
             />

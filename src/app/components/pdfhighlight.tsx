@@ -16,7 +16,7 @@ const showHighlight = (values: any, isHover?: boolean, initial?: boolean) => {
   drawRectangle(JSON.parse(JSON.stringify(selected)), isHover);
 };
 
-const clearOldRectangles = () => {
+export const clearOldRectangles = () => {
   // Select the iframe element
   const iframe = (window as any).frames[0];
 
