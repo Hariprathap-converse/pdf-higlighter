@@ -3299,8 +3299,8 @@
   --toolbarButton-secondaryToolbarToggle-icon: url(images/toolbarButton-secondaryToolbarToggle.svg);
   --toolbarButton-pageUp-icon: url(images/toolbarButton-pageUp.svg);
   --toolbarButton-pageDown-icon: url(images/toolbarButton-pageDown.svg);
-  --toolbarButton-zoomOut-icon: url(images/toolbarButton-zoomOut.svg);
-  --toolbarButton-zoomIn-icon: url(images/toolbarButton-zoomIn.svg);
+  --toolbarButton-zoomOut-icon: url(images/custome-zoom-out.svg);
+  --toolbarButton-zoomIn-icon: url(images/custome-zoom-in.svg);
   --toolbarButton-presentationMode-icon: url(images/toolbarButton-presentationMode.svg);
   --toolbarButton-print-icon: url(images/toolbarButton-print.svg);
   --toolbarButton-openFile-icon: url(images/toolbarButton-openFile.svg);
@@ -3940,7 +3940,8 @@ body {
 
 .splitToolbarButton {
   margin: 2px;
-  display: inline-block;
+  display: flex;
+  gap: 10px;
 }
 .splitToolbarButton > .toolbarButton {
   float: var(--inline-start);
@@ -4808,4 +4809,9 @@ dialog :link {
   #scaleSelectContainer {
     display: none;
   }
+}
+
+.scale-warrper-container {
+  display: flex;
+  position: relative;
 }

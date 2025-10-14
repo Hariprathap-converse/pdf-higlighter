@@ -279,7 +279,6 @@ export default function Page() {
     }
     console.warn("Failed to highlight field after retries:", field);
   };
-
   return (
     <div className="h-screen w-full p-6 flex flex-col bg-gray-50">
       <h1 className="text-2xl font-semibold flex  gap-20 w-full justify-between px-5 mb-4 text-gray-800">
@@ -297,7 +296,40 @@ export default function Page() {
               className="w-full max-h-full h-full border-0"
               title="PDF Viewer"
               onLoad={() => {
-                editableHighlights.forEach((h) => waitForPDF(h.field, false));
+                const iframeWindow = pdfIframeRef.current?.contentWindow;
+                if (!iframeWindow) return;
+
+                const applyAllHighlights = () => {
+                  editableHighlights.forEach((h) => waitForPDF(h.field, false));
+                };
+
+                // Initial draw
+                applyAllHighlights();
+
+                // 👇 Wait a bit for PDF.js viewer DOM to fully load
+                setTimeout(() => {
+                  const zoomInBtn =
+                    iframeWindow.document.getElementById("zoomIn");
+                  const zoomOutBtn =
+                    iframeWindow.document.getElementById("zoomOut");
+                  const scaleSelect =
+                    iframeWindow.document.getElementById("scaleSelect");
+
+                  if (zoomInBtn && zoomOutBtn && scaleSelect) {
+                    const reapply = () => {
+                      setTimeout(() => {
+                        applyAllHighlights();
+                      }, 400);
+                    };
+
+                    zoomInBtn.addEventListener("click", reapply);
+                    zoomOutBtn.addEventListener("click", reapply);
+                    scaleSelect.addEventListener("change", reapply);
+                  } else {
+                    console.warn("⚠️ Zoom controls not found in iframe yet");
+                  }
+                }, 1000);
+                applyAllHighlights();
               }}
             />
           ) : (
